@@ -18,7 +18,7 @@
 // Main colors -----------------
 @ui-fg:     hsl(@ui-hue, @ui-saturation, @ui-lightness - 72%);
 @ui-bg:     hsl(@ui-hue, @ui-saturation, @ui-lightness); // normalized @syntax-background-color
-@ui-border: darken(@base-background-color, 16%);
+@ui-border: #eee8d5;
 
 
 
@@ -35,17 +35,17 @@
 @text-color-highlight:  darken(@text-color, 10%);
 @text-color-selected:   darken(@text-color-highlight, 10%);
 
-@text-color-info:    hsl(208, 100%, 54%);
-@text-color-success: hsl(132,  60%, 44%);
-@text-color-warning: hsl( 37,  90%, 44%);
-@text-color-error:   hsl(  0,  90%, 56%);
+@text-color-info:    #b58900;
+@text-color-success: #2aa198;
+@text-color-warning: #cb4b16;
+@text-color-error:   #dc322f;
 
 
 // Background -----------------
-@background-color-info:    hsl(208, 100%, 56%);
-@background-color-success: hsl(132,  48%, 48%);
-@background-color-warning: hsl( 40,  60%, 52%);
-@background-color-error:   hsl(  0,  60%, 56%);
+@background-color-info:    #0075B0; // Not new!
+@background-color-success: #407A55; // Not new!
+@background-color-warning: #856A35; // Not new!
+@background-color-error:   #8F3939; // Not new!
 
 @background-color-highlight: hsla(@ui-hue, @ui-saturation, 50%,.08);
 @background-color-selected:  hsla(@ui-hue, @ui-saturation, 50%,.16);
@@ -113,7 +113,7 @@
 
 
 // Font -----------------
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: 'fira mono', monospace;
 
 
 
@@ -138,7 +138,7 @@
 // Background (Custom) -----------------
 @level-1-color: lighten(@base-background-color, 4%);
 @level-2-color: @base-background-color;
-@level-3-color: darken(@base-background-color, 8%);
+@level-3-color: #eee8d5;
 
 
 // Base (Custom) -----------------

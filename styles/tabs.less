@@ -32,7 +32,6 @@
     margin: 0;
     background-clip: content-box;
     &.active {
-      border-radius: @component-border-radius*1.75 @component-border-radius*1.75 0 0;
       background-color: @tab-background-color-active;
     }
 
@@ -212,28 +211,6 @@
         border-color: transparent @base-accent-color transparent transparent;
       }
     }
-  }
-}
-
-
-// Active pane marker --------------
-
-.tab-bar .tab::before {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 2px;
-  border-radius: 0;
-  background: @base-accent-color;
-  opacity: 0;
-  transition: opacity .16s;
-
-  .theme-one-light-ui & {
-    left: 0;
   }
 }
 
